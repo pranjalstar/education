@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .about {
+            margin-top: -150px;
+        }
+
+        .about .row {
+            /* display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 6rem; */
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 4rem;
+            height: 100%;
+        }
+
+        .about .row {
+
+            padding: 70px 90px;
+        }
+
+        .about .row .image img {
+            width: 100%;
+
+        }
+
+        .about .row .content {
+            /* flex: 1 1 51rem; */
+        }
+
+        .about .row .content h4 {
+            font-size: 3.1rem;
+            padding: 2rem o;
+        }
+
+        .about .row .content p {
+            line-height: 1.8;
+            padding: 1rem 0;
+        }
+
+        .container-achieve {
+            margin-top: -290px;
+            padding: 70px 90px;
+            display: grid;
+            grid-template-columns: 40% 60%;
+            gap: 5rem;
+        }
+
+        .about-achieve-right>p {
+            margin: 1.6rem 0 2.5rem;
+        }
+
+        .achieve-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5rem;
+
+        }
+
+        .achieve-cards .achieve {
+            background: #2e3267;
+            padding: 1.6rem;
+            border-radius: 1rem;
+            text-align: center;
+            transition: all 400ms ease;
+        }
+
+        .achieve-cards .achieve:hover {
+            background: #424890;
+            box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+        }
+
+        .achieve-icon i {
+            background: #f75842;
+            padding: 0.6rem;
+            border-radius: 1rem;
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-size: 34px;
+        }
+
+        .achieve:nth-child(2) .achieve-icon {
+            background: #00bf8e;
+
+        }
+
+        .achieve :nth-child(2) .achieve-icon {
+            background: #00bf8e;
+        }
+
+        .achieve p {
+            margin-top: 1rem;
+        }
+        /* team */
+        .team{
+            background: #2e3267;
+            box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+        }
+        .container-team{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            padding: 70px 90px;
+            gap: 2rem;
+        }
+        .team-member{
+            background:#424890 ;
+            padding: 2rem;
+            border: 1px solid transparent;
+            transition: all 400ms ease;
+            position: relative;
+        }
+        .team-member:hover{
+            background: transparent;
+            background:#6c63ff ;
+        }
+        .team-member-image img{
+            filter: grayscale(0);
+        }
+        .team-member:hover img{
+            filter: grayscale(1);
+        }
+        .team-member-info{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .team-member-info p{
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 10px;
+        }
+        .team-member-social{
+            text-align: center;
+            margin-top: 10px;
+
+        }
+        .team-member-social i{
+            color: aliceblue;
+            margin: 5px;
+            font-size: 18px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html">
+                <h4>EGATOR</h4>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </nav>
+    <section class="about" id="about">
+        <div class="row">
+            <div class="image">
+                <img src="../img/about2-removebg-preview.png">
+            </div>
+            <div class="content">
+                <h4>About Us</h4>
+                <p>We're the all-in-one lab for your digital needs, from pixel-perfect design to marketing that bring
+                    real results.We're a Belgrade-based agency delivering tangible digital success. Our Smart Study Team
+                    combines youthful energy with rich expertise in every digital marketing domain. With an exceptional
+                    concentration of talent on our team, we offer a diverse portfolio of services to meet any business
+                    requirement. From organic and paid marketing strategies to specialized web development & design, we
+                    provide a comprehensive solution.</p>
+            </div>
+        </div>
+    </section>
+    <section class="achieve">
+        <div class="container-achieve">
+            <div class="about-achieve-left">
+                <img src="../img/about achievements.svg">
+            </div>
+            <div class="about-achieve-right">
+                <h1>Acheivments</h1>
+                <p>The learning process is a beautiful thing, but, just like with any career, it can feel frustrating at
+                    times. This is why, returning to a few favorite education quotes that speak to learning’s purpose
+                    can be a helpful way to remind yourself and your students why education is important.A proper path
+                    sets people up to grow personally, professionally, and socially. It can awaken joy, curiosity and a
+                    deep desire to solve problems and help others. Plus, teaching a student can inspire them to pursue
+                    leadership roles and positively impact those around them.</p>
+                <div class="achieve-cards">
+                    <article class="achieve">
+                        <span class="achieve-icon">
+                            <i class="fa-solid fa-video"></i>
+                            <h3>200+</h3>
+                            <p>Courses</p>
+                        </span>
+                    </article>
+                    <article class="achieve">
+                        <span class="achieve-icon">
+                            <i class="fa-solid fa-user"></i>
+                            <h3>59,000</h3>
+                            <p>Students</p>
+                        </span>
+                    </article>
+                    <article class="achieve">
+                        <span class="achieve-icon">
+                            <i class="fa-solid fa-award"></i>
+                            <h3>26+</h3>
+                            <p>Awards</p>
+                        </span>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---team-->
+    <section class="team">
+        <h2>Meet Our Team</h2>
+        <div class="container-team">
+            <article class="team-member">
+                <div class="team-image">
+                    <img src="../img/tm1.jpg">
+                </div>
+                <div class="team-member-info">
+                    <h4>Shatta Wale</h4>
+                    <p>Expert Tutor</p>
+                </div>
+                <div class="team-member-social">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </article>
+            <article class="team-member">
+                <div class="team-image">
+                    <img src="../img/tm2.jpg">
+                </div>
+                <div class="team-member-info">
+                    <h4>Mia Jones</h4>
+                    <p>Expert Tutor</p>
+                </div>
+                <div class="team-member-social">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </article>
+            <article class="team-member">
+                <div class="team-image">
+                    <img src="../img/tm3.jpg">
+                </div>
+                <div class="team-member-info">
+                    <h4>Diana Ayi</h4>
+                    <p>Expert Tutor</p>
+                </div>
+                <div class="team-member-social">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </article>
+            <article class="team-member">
+                <div class="team-image">
+                    <img src="../img/tm4.jpg">
+                </div>
+                <div class="team-member-info">
+                    <h4>John Dumelo</h4>
+                    <p>Expert Tutor</p>
+                </div>
+                <div class="team-member-social">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </article>
+            <article class="team-member">
+                <div class="team-image">
+                    <img src="../img/tm5.jpg">
+                </div>
+                <div class="team-member-info">
+                    <h4>Miara</h4>
+                    <p>Expert Tutor</p>
+                </div>
+                <div class="team-member-social">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </article>
+            <article class="team-member">
+                <div class="team-image">
+                    <img src="../img/tm6.jpg">
+                </div>
+                <div class="team-member-info">
+                    <h4>Edem Quist</h4>
+                    <p>Expert Tutor</p>
+                </div>
+                <div class="team-member-social">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </article>
+            <article class="team-member">
+                <div class="team-image">
+                    <img src="../img/tm7.jpg">
+                </div>
+                <div class="team-member-info">
+                    <h4>Lila James</h4>
+                    <p>Expert Tutor</p>
+                </div>
+                <div class="team-member-social">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </article>
+            <article class="team-member">
+                <div class="team-image">
+                    <img src="../img/tm8.jpg">
+                </div>
+                <div class="team-member-info">
+                    <h4>Menz Gold</h4>
+                    <p>Expert Tutor</p>
+                </div>
+                <div class="team-member-social">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </article>
+            <article class="team-member">
+                <div class="team-image">
+                    <img src="../img/tm9.jpg">
+                </div>
+                <div class="team-member-info">
+                    <h4>Shatta Wale</h4>
+                    <p>Expert Tutor</p>
+                </div>
+                <div class="team-member-social">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </article>
+            <article class="team-member">
+                <div class="team-image">
+                    <img src="../img/tm10.jpg">
+                </div>
+                <div class="team-member-info">
+                    <h4>Shatta Wale</h4>
+                    <p>Expert Tutor</p>
+                </div>
+                <div class="team-member-social">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+</body>
+
+</html>

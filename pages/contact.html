@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .conatiner-conatct{
+            background: #2e3267;
+            padding: 4rem;
+            display: grid;
+            grid-template-columns: 40% 50%;
+            gap: 4rem;
+            height: 30rem;
+            margin: 7rem auto;
+            border-radius: 10px;
+        }
+        .conatct-aside{
+            background: #6c63ff;
+            padding: 3rem;
+            border-radius: 1rem;
+            position: relative;
+            bottom: 1rem;
+        }
+        .aside-image{
+            width: 12rem;
+            margin-bottom: 2rem;
+        }
+        .conatct-aside h2{
+            text-align: left;
+            margin-bottom: 1rem;
+        }
+        .conatct-aside p{
+            font-family: 0.9rem;
+            margin-bottom: 2rem;
+        }
+        .conatct-details li{
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .conatct-social{
+            display: flex;
+            gap: 0.8rem;
+            margin-top: 3rem;
+        }
+        .conatct-social a{
+            background: #424890;
+            padding: 0.5rem;
+            border-radius: 50%;
+            font-size: 0.9rem;
+            color: white;
+        }
+        .conatct-social a:hover{
+            background: transparent;
+        }
+        .contact-form{
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            margin-right: 4rem;
+            padding-top: 40px;
+        }
+        .form-name{
+            display: flex;
+            gap: 1.2rem;
+            padding: 10px;
+        }
+        .conatct-form input[type="text"]{
+            width: 50%;
+        }
+        .conatct-form input[type="email"]{
+            display: flex;
+            gap: 5rem;
+        }
+        input,
+        textarea{
+            width: 100%;
+            padding: 1rem;
+            background: #1f2641;
+            color: white;
+            padding: 10px;
+        }
+        .conatct-form .btn{
+            width: max-content;
+            margin-top: 1rem;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html">
+                <h4>EGATOR</h4>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </nav>
+    <section class="contact">
+        <div class="conatiner-conatct">
+            <aside class="conatct-aside">
+                <div class="aside-image">
+                    <img src="../img/contact.svg">
+                </div>
+                <h2>Conatct us</h2>
+                <p>We’re starting off this list with our very own page. Help Scout's contact page shows how contact us forms can help you provide an effortless support experience. The clean design and well-organized layout of the page make it easy for visitors to find the help they need.</p>
+                <ul class="conatct-details">
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <h5>+9938223802</h5>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <h5>khushi@gmail.com</h5>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h5>Gaya, Bihar</h5>
+                    </li>
+                </ul>
+                <ul class="conatct-social">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                </ul>
+            </aside>
+          <form class="conatct-form">
+            <div class="form-name">
+                <input type="text" name="First Name" placeholder="First Name" required>
+                <input type="text" name="Last Name" placeholder="Last Name" required>
+            </div>
+            <input type="email" name="Email Address" placeholder="Your Email Address" required>
+            <textarea name="Message" rows="7" placeholder="Messgae" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
